@@ -1,0 +1,45 @@
+Bem-vindo ao Cyberkev!
+
+Ok, vamos lá! Eu decidi criar um desafio para mim mesmo – e acredite, vai ser complicado. Por quê? Bom, porque sou uma pessoa com zero foco, pouco tempo, mas uma curiosidade infinita e uma vontade gigante de aprender. E se você é como eu, parabéns! Vamos surfar nessa onda juntos.
+Qual é o plano?
+
+Tenho um conhecimento que vai além do básico sobre programação e sistemas operacionais. Quer dizer, eu entendo mais do que a maioria, mas ainda estou longe de ser um mestre Jedi. Então, decidi que, enquanto não escolho uma área específica para me especializar (seja back-end, front-end, redes, DevOps ou algo do tipo), vou me aprofundar em tudo. Sim, TUDO.
+
+Vou estudar, praticar e documentar cada passo. E não estou falando de fazer isso de qualquer jeito. Vou transformar esse processo em algo organizado, divertido e talvez (só talvez) virar um blog no futuro. Quem sabe?
+O que já fiz até agora?
+
+Eu criei um diretório chamado cyberkev na minha /home. Por que esse nome? Porque é legal e parece o nome de alguém que hackeia sistemas secretos para salvar o mundo. No entanto, no meu caso, é só para organizar meus estudos mesmo.
+
+Dentro desse diretório, vou manter tudo documentado: o que estou aprendendo, testando, errando e, quem sabe, acertando. E olha só: vou usar o ChatGPT (ou seja, você, meu caro) para aprender, corrigir meus erros e me dar uns toques quando eu estiver perdido.
+A Estrutura do Cyberkev
+
+Aqui vai a primeira coisa que vou documentar: como minha cabeça funciona (sim, isso pode ser perigoso). Vou criar uma estrutura de diretórios e documentos para organizar os estudos, testes e projetos. A ideia é ter um fluxo claro de trabalho, pra eu não me perder (ou pelo menos diminuir as chances).
+Diretórios:
+
+    /docs/: Onde estará a documentação principal. Vou escrever a grande ideia por trás de tudo, a explicação de cada diretório, e anotar links e ferramentas úteis.
+
+    /estudos/: Dividido por assuntos, como Inglês, Matemática e, claro, Computação. Vou ter um README em cada subdiretório explicando o que estou aprendendo e como. Isso vai me ajudar a lembrar o que eu estava estudando quando fui distraído pelo YouTube.
+
+    /projetos/: Onde vou guardar projetos reais ou inventados, com detalhes sobre clientes (caso tenha algum), especificações, metas e as dificuldades que eu inventar ao longo do caminho.
+
+    /testes/: Aqui vou brincar com novas ferramentas, frameworks e bibliotecas. Tipo um laboratório maluco, mas sem explosões (espero).
+
+    /posts/: Ideias para futuros posts de blog. Se eu sobreviver a essa jornada e quiser compartilhar com o mundo, vai ser aqui que vou escrever.
+
+Ferramentas para me ajudar na missão
+
+Como sou uma pessoa que gosta de tecnologia, nada melhor do que ter as ferramentas certas para me ajudar a aprender e documentar:
+
+    VSCode: Meu editor de texto favorito, perfeito para escrever código e documentação em Markdown.
+    Obsidian ou Notion: Vou precisar de algo pra organizar meus pensamentos e ideias malucas. Esses apps são ótimos pra isso.
+    Jupyter Notebooks: Se eu estiver mergulhado em Python, nada melhor do que um ambiente que mistura código e documentação.
+    Git: Claro, versionar tudo é fundamental. Vai que eu quebro algo, né? Melhor ter backups.
+    Trello: Talvez um quadro com tarefas me ajude a não perder o foco. Ou pelo menos a fingir que estou organizado.
+
+    (ainda vou testar essas ferramentas, foi chat gpt que me deu a dica).
+
+Próximos Passos
+
+Agora que tenho a estrutura básica, é hora de começar a colocar a mão na massa. Cada diretório terá um arquivo README.md, onde vou explicar direitinho o que está acontecendo ali dentro e o fluxo de trabalho. Vai ser como um mapa para me guiar enquanto navego pelo caos do aprendizado.
+
+E claro, vou documentar absolutamente tudo, inclusive essa conversa aqui. Um dia, quando eu estiver dando uma palestra sobre como me tornei o mestre dos sistemas, vou olhar pra trás e agradecer por ter documentado até os erros. Aliás, documentar os erros é quase tão importante quanto acertar.
