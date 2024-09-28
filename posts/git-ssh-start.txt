@@ -1,0 +1,196 @@
+Documentando a Configuração do Git com GitHub: Explorando o Mundo do SSH
+
+Hoje eu vou documentar a configuração do Git com o GitHub, mas, no fundo, o que eu quero mesmo é aprender mais sobre SSH. Já usei algumas vezes e até entendo o objetivo como ferramenta, mas sinto que tem algumas lacunas. Então, vamos preenchê-las.
+1. Começando pelo Git
+
+O Git é basicamente o sistema de controle de versão que vai permitir que você registre a evolução do seu código. Com ele, você pode voltar no tempo, experimentar sem medo de perder nada e compartilhar seus projetos de forma organizada com outras pessoas.
+
+Configurando o Git
+
+A primeira coisa que você vai fazer é configurar seu nome e e-mail. Isso vai garantir que, ao fazer seus commits, o Git saiba quem é você.
+
+Comando para configurar o nome de usuário:
+
+    Comando para configurar nome de usuário:
+
+    !!*
+    terminal
+
+    git config --global user.name "Seu Nome"
+
+    !!*!
+
+    Esse comando informa ao Git qual nome exibir nas suas ações, como os commits.
+
+Comando para configurar o e-mail:
+
+!!*
+terminal
+git config --global user.email "seu-email@example.com"
+
+!!*!
+
+    Esse e-mail vai ser associado aos seus commits. Use o e-mail que está associado ao seu GitHub.
+
+A flag --global faz com que essas configurações sejam aplicadas para todos os repositórios no seu sistema. Se você quiser definir isso só para um projeto específico, remova a flag --global e rode os comandos dentro do diretório do projeto.
+Iniciando um Repositório Local
+
+Quando você quer começar a usar o Git num diretório (tipo o seu cyberkev), você inicializa um repositório Git nele com:
+
+!!*
+terminal
+git init
+!!*!
+
+Isso cria um diretório oculto .git/, onde o Git vai armazenar todo o histórico do seu projeto.
+Adicionar arquivos para o Git rastrear
+
+Depois de modificar ou adicionar arquivos no seu diretório, você precisa dizer ao Git o que ele deve rastrear:
+
+!!*
+terminal
+git add arquivo.txt
+
+!!*!
+
+Se você quiser adicionar todos os arquivos de uma vez:
+
+!!*
+terminal
+git add .
+
+!!*!
+
+Agora o Git sabe que você quer que ele rastreie esses arquivos, mas ele ainda não salvou nada de forma definitiva.
+Commitando as mudanças
+
+Agora é hora de fazer um commit, que é como tirar uma foto do estado atual dos seus arquivos:
+
+!!*
+terminal
+git commit -m "Mensagem descritiva do que você fez"
+
+!!*!
+
+
+A flag -m permite que você inclua uma mensagem descrevendo as mudanças que você fez. Isso é importante para você e para qualquer outra pessoa que for olhar o histórico dos commits.
+Subindo pro GitHub (ou outro repositório remoto)
+
+Pra mandar suas mudanças pro GitHub, você precisa vincular o seu repositório local ao remoto:
+
+    Adicionar um remote (URL do repositório remoto):
+
+!!*
+terminal
+git remote add origin git@github.com:seu-usuario/seu-repo.git
+
+!!*!
+
+Enviar seus commits para o repositório remoto:
+
+
+!!*
+terminal
+git push -u origin main
+
+!!*!
+
+Aqui, origin é o apelido do repositório remoto, e main é o branch principal. A flag -u estabelece o vínculo entre seu branch local e o remoto, então, na próxima vez, basta fazer git push.
+
+Porem, aqui voce ira encontrar um problema caso nao tenha sincronizado sua chave ssh com o github.
+esse problema será por que voce precisa criar e sincronizar suas chaves ssh com o github.
+
+2. Gerando e Usando Chaves SSH
+O que é SSH e para que serve no GitHub?
+
+O SSH (Secure Shell) é uma maneira de conectar-se de forma segura a outro dispositivo, como um servidor ou repositório remoto. No caso do GitHub, ele substitui a autenticação por senha por uma chave criptográfica. Assim, ao invés de você ficar digitando a senha toda vez que fizer um git push, o GitHub verifica se a chave que você gerou bate com a que você registrou na sua conta.
+Gerando Chaves SSH
+
+Você pode gerar diferentes tipos de chaves SSH, dependendo das suas necessidades de segurança e compatibilidade. As duas mais comuns são:
+
+    ED25519 (Recomendada): Um algoritmo mais moderno e rápido.
+    RSA (Mais antiga, mas ainda amplamente usada): Geralmente usada com tamanho de chave de 4096 bits para segurança.
+
+    !!*
+    terminal
+    ssh-keygen -t ed25519 -C "seu-email@example.com"
+
+    !!*!
+    Esse comando vai gerar um par de chaves (pública e privada). Ele te perguntará onde salvar a chave. Se você simplesmente pressionar Enter, ele vai salvar no caminho padrão (~/.ssh/id_ed25519).
+Gerando uma chave RSA
+
+Se você precisar de uma chave compatível com sistemas mais antigos ou com requisitos específicos:
+
+    !!*
+    terminal
+    ssh-keygen -t rsa -b 4096 -C "seu-email@example.com"
+
+    !!*!
+    A flag -b 4096 significa que você está gerando uma chave de 4096 bits (mais segura que as mais curtas).
+Adicionando a chave SSH ao GitHub
+
+Depois de gerar a chave, você precisa adicionar a chave pública ao GitHub:
+
+    Copie a chave pública:
+
+    !!*
+    terminal
+    cat ~/.ssh/id_ed25519.pub
+
+    !!*!
+    Vá até Configurações do GitHub > SSH and GPG keys e clique em New SSH Key. Cole a chave pública e dê um nome pra ela.
+
+Agora, quando você tentar usar o Git com SSH, o GitHub vai verificar se a sua chave privada (guardada no seu sistema) corresponde à chave pública armazenada no GitHub.
+Carregando a Chave SSH no SSH-Agent
+
+Você pode fazer o SSH-Agent gerenciar suas chaves SSH para evitar que você precise digitar a senha da chave sempre que fizer um push/pull. Rode os comandos:
+
+    !!*
+    terminal
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519  # ou ~/.ssh/id_rsa
+
+    !!*!
+Isso vai carregar a chave privada no agente, tornando sua vida mais fácil.
+
+Agora vamos em slow motion.
+isso significa que vamos entender os comandos que fizemos passo a passo. isso ira abrir mais pqrguntas que dara um ou mais posts só sobre esse tal assunto.
+muito provavelmente vou fazer esses posts linkando-se por ai.
+
+Agora, vamos entender passo a passo o que fizemos até aqui e abrir novas questões:
+
+    O que é Git e o que significam os comandos que usamos?
+    O que são chaves SSH? Chaves públicas e privadas?
+    O que é o eval e o ssh-agent?
+    Como o comando ssh-keygen funciona e o que são seus parâmetros?
+    O que significa ~/ e como gerenciar o .ssh/?
+
+Esses temas provavelmente vão gerar mais posts e discussões interessantes, então fique de olho para links como este: 
+
+minha version---
+
+o que é git e o que significa os comandos que digitados?
+
+o que é chaves ssh?
+
+chaves publicas e privadas
+eval? ssh-agent?
+gerenciamento de chaves
+
+ssh-keygen, o que é esse comando
+
+"ssh-keygen -t rsa -b 4096 -C "
+
+o que esses parametros querem dizer?
+
+o que significa ~/.?
+--version-
+
+......................
+
+marca do terminal
+
+    !!*
+    terminal
+
+    !!*!

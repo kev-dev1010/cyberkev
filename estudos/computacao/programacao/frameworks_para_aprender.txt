@@ -1,0 +1,27 @@
+nodejs
+
+jquery
+
+nextjs
+
+express
+
+angular
+
+aps.net core
+
+vuejs
+
+flesk
+
+spring boot
+
+django
+
+wordpress
+
+fastAPI
+
+laravel
+
+

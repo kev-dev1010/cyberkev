@@ -1,0 +1,106 @@
+Estrutura do Plano de Estudos:
+1. Configuração do Ambiente de Desenvolvimento
+
+    VSCode: Continue usando, mas configure corretamente para otimizar seu trabalho.
+        Plugins recomendados:
+            ESLint (linter para manter o código limpo)
+            Prettier (formatador automático)
+            REST Client (para testar APIs)
+            GitLens (integração avançada com Git)
+        Sugestão de configuração:
+            Instale o Node.js via NVM (corrigindo o problema de permissões).
+            Configure Docker para desenvolvimento de ambientes isolados.
+
+    Git e GitHub:
+        Aprenda a usar Git para versionamento de código.
+        Suba seus projetos no GitHub para criar portfólio.
+
+    Notion e Trello:
+        Notion para documentar aprendizado e projetos.
+        Trello para gerenciar suas tarefas e organização diária/semana de estudo.
+
+2. Prioridades: Aprender para Ganhar Dinheiro
+
+Foco em aprender as linguagens e frameworks mais utilizados para freelas e trabalhos iniciais.
+
+Front-end:
+
+    HTML, CSS, JavaScript: Você já tem uma base, mas precisa refinar.
+    React.js (mais importante):
+        É a lib mais demandada para freelas e projetos.
+        Prática:
+            Refatorar sites simples que você já fez para usar React.
+            Criar projetos como uma landing page, um portfólio e um app de "to-do list".
+        Extras: TailwindCSS (para estilizar rapidamente), Bootstrap.
+
+Back-end:
+
+    Node.js com Express (você já começou a aprender):
+        Crie uma API simples com CRUD (Create, Read, Update, Delete).
+        Integre com o PostgreSQL para armazenar dados.
+        Prática:
+            Crie um sistema de login e autenticação com JWT.
+            Desenvolva uma API para um sistema de gerenciamento de tarefas.
+
+Banco de Dados:
+
+    PostgreSQL: Aprenda o básico de SQL e como interagir com o banco.
+        Crie e gerencie tabelas, faça queries básicas.
+        Prática: Construa um pequeno sistema de controle financeiro (ou use o projeto de finanças que já começou).
+
+Fullstack básico:
+
+    Integre o React com o backend em Node.js.
+    Prática:
+        Crie um sistema de blog simples (usuário pode escrever posts e os dados são salvos no PostgreSQL).
+
+DevOps básico (futuramente, após o domínio das stacks):
+
+    Docker: Crie contêineres para seus projetos.
+    CI/CD com GitHub Actions: Automatize os testes e o deploy.
+
+3. Estudos mais Profundos (Coluna Base Comum dos Roadmaps)
+
+    Algoritmos e Estrutura de Dados: Muito importante para entrevistas de emprego e resolução de problemas.
+        Foco em estruturas como listas, árvores, filas e buscas.
+        Prática: Resolução de exercícios no LeetCode e HackerRank.
+    Versionamento e Colaboração com Git:
+        Comandos Git, branchs, pull requests, etc.
+        Prática: Contribua com projetos open-source no GitHub.
+    Design Patterns:
+        Boas práticas para resolver problemas recorrentes em projetos de software.
+
+4. Planos de Estudo Diários e Semanais
+
+    Segunda a Sexta: 3 horas de estudo prático + 1 hora de leitura/teoria.
+        Front-end (2x/semana): React.js, CSS, JavaScript.
+        Back-end (2x/semana): Node.js, Express, PostgreSQL.
+        Git e Deploy (1x/semana): Git básico, deploy em Vercel/Heroku.
+    Sábado: Revisão e prática de algoritmos (1 a 2 horas).
+    Domingo: Repouso ou ajuste de pendências.
+
+5. Aprofundamento e Projetos
+
+Dica: Crie um portfólio no GitHub e LinkedIn com projetos reais que demonstram suas habilidades. Você pode tentar pegar projetos pequenos de freelance em sites como:
+
+    Upwork
+    Freelancer
+    Fiverr
+
+Próximos Passos:
+
+    Configurar seu ambiente com NVM, VSCode, Node.js, Docker.
+    Iniciar pequenos projetos práticos enquanto estuda as tecnologias listadas.
+    Organizar suas tarefas no Trello para acompanhar o progresso diário e semanal.
+    Usar o Notion para documentar aprendizados e anotar problemas que você resolver.
+
+.............................
+28/09/2024
+ja consegui instalar e configurar o nvm, vscode, node.
+
+estou estudando o docker e registrando meu aprendizado basico para seguir a instalção.
+
+LEMBRS::
+instalar o docker e seu echo sistema até amanha (28/09).
+
+...................................

@@ -1,0 +1,5 @@
+aqui é para registrar coisas sobre meus estudo.
+
+cada diretorio será sobre algum assunto
+
+cada dia que for atualizado, tera um arquivo txt dentro dos seus diretorios

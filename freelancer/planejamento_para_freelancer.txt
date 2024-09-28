@@ -1,0 +1,18 @@
+Primeiro fazer uma pesquisa de tipos de serviços mais comuns pedidos em sites de freelancers
+aprender o basico sobre as tecnologias relacionada a esse tipo de serviço.
+
+criar conta nos sites de freelancers por ai.
+criar redes sociais para marketing dos serviços oferecidos.
+
+criar um site.
+
+criar um portfolio.
+
+publicar em github, heroku, netlify, vercel
+
+
+Saber Gerenciar o Tempo e os Projetos
+
+    Ferramentas de Gestão: Usa o Trello, Notion, ou Asana para organizar tarefas e prazos.
+    Cuidar das Finanças: Se já não começou, aquele teu gerenciador de finanças que você está criando pode ser bem útil aqui. Separa uma porcentagem para impostos e mantenha tudo organizado.
+
